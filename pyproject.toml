@@ -1,0 +1,16 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencv_panorama_stitcher_pro"
+version = "0.1.0"
+description = "OpenCV Panorama Stitcher (Pro)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Dhamodar Burla", email = "burladhamodar@gmail.com" }]
+dependencies = ["numpy>=1.24","opencv-python>=4.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0","flake8","black","isort","pre-commit"]
